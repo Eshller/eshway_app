@@ -1,0 +1,82 @@
+type CallModel @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  callerId: String
+  callerName: String
+  receiverId: String
+  receiverPic: String
+  callId: String
+  hasDialled: Boolean
+  isVoiceCall: Boolean
+  timestamp: String
+  pushToken: String
+}
+
+type MeetingModel @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  senderId: String
+  receiverId: String
+  senderName: String
+  receiverPic: String
+  receiverName: String
+  date: String
+  time: String
+  isAccept: Boolean
+  isAudio: Boolean
+  isVideo: Boolean
+  isDone: Boolean
+  isDonePayment: Boolean
+  isDecline: Boolean
+  senderPic: String
+}
+
+type ReviewsModel @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  senderId: String
+  recieverId: String
+  rating: Int
+  message: String
+}
+
+type FeesCharge {
+  audiocall: String
+  videoCall: String
+  isChat: String
+}
+
+type GuruModel @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  documentId: String
+  username: String
+  about: String
+  isOnline: Boolean
+  phoneNumber: String
+  totalRating: Float
+  qualification: String
+  yearOfExperience: Int
+  experience: String
+  imageUrl: String
+  specialist: String
+  joiningTime: String
+  unAvailableFrom: String
+  unAvailableTo: String
+  timeFrom: String
+  timeTo: String
+  pushToken: String
+  feesCharge: FeesCharge
+  listExplore: [String]
+}
+
+type UserModel @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  username: String
+  phoneNumber: String
+  createdAt: AWSDateTime
+  isVerified: Boolean
+  isGuru: Boolean
+  documentId: String
+  listExplore: [String]
+  photoUrl: String
+  pushToken: String
+  role: String
+}
+ 

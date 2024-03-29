@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-caffae-dev-234438-authRole",
+      "UnauthRoleArn": "arn:aws:iam::754365649735:role/amplify-caffae-dev-234438-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::754365649735:role/amplify-caffae-dev-234438-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-caffae-dev-234438-deployment",
+      "UnauthRoleName": "amplify-caffae-dev-234438-unauthRole",
+      "StackName": "amplify-caffae-dev-234438",
+      "StackId": "arn:aws:cloudformation:ap-south-1:754365649735:stack/amplify-caffae-dev-234438/ab5c4a90-8c87-11ee-9f48-0a9b16e3e0d0",
+      "AmplifyAppId": "d1xhup31hsw3gm"
+    },
+    "categories": {
+      "auth": {
+        "caffaeauth": {}
+      },
+      "api": {
+        "caffae": {}
+      },
+      "storage": {
+        "photourl": {}
+      }
+    }
+  }
+}
